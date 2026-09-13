@@ -128,5 +128,17 @@ if analyze_button:
             st.error(
                 f"API Error: {response.status_code}"
             )
-
-            st.code(response.text)
+# Footer
+st.markdown(
+    """
+    <div style="
+        text-align: center;
+        color: #888888;
+        padding: 30px 0 10px 0;
+        font-size: 14px;
+    ">
+        Made with ❤️ by <b>shafique2606</b>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
