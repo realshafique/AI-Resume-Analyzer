@@ -6,18 +6,17 @@ from google import genai
 from google.genai import types
 
 
-# Load environment variables from .env
+
 load_dotenv()
 
 
-# Get Gemini API key
 api_key = os.getenv("GEMINI_API_KEY")
 
 if not api_key:
     raise ValueError("GEMINI_API_KEY is not set")
 
 
-# Create Gemini client
+
 client = genai.Client(
     api_key=api_key
 )
@@ -38,13 +37,12 @@ def generate_json(prompt: str) -> dict:
             )
         )
 
-        # Check if Gemini returned anything
         if not response.text:
             raise ValueError(
                 "Gemini returned an empty response"
             )
 
-        # Convert JSON string → Python dictionary
+      
         return json.loads(response.text)
 
     except json.JSONDecodeError as e:

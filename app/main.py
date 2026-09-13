@@ -100,7 +100,7 @@ async def match_resume(
 ):
     try:
 
-        # Check filename
+       
         if not file.filename:
             raise HTTPException(
                 status_code=400,
@@ -113,14 +113,14 @@ async def match_resume(
                 detail="Only PDF files are supported."
             )
 
-        # Check job description
+       
         if not job_description.strip():
             raise HTTPException(
                 status_code=400,
                 detail="Job description cannot be empty."
             )
 
-        # Read PDF
+       
         pdf_bytes = await file.read()
 
         print("\n========== UPLOAD ==========")
@@ -129,14 +129,14 @@ async def match_resume(
         print("PDF size:", len(pdf_bytes), "bytes")
         print("============================")
 
-        # Empty file check
+       
         if len(pdf_bytes) == 0:
             raise HTTPException(
                 status_code=400,
                 detail="Uploaded PDF is empty. Please select a valid PDF file."
             )
 
-        # Extract text
+       
         resume_text = extract_text_from_pdf(pdf_bytes)
 
         print("Extracted text:", len(resume_text), "characters")
@@ -147,7 +147,7 @@ async def match_resume(
                 detail="PDF was uploaded, but no readable text was found."
             )
 
-        # Match resume against job
+      
         result = match_resume_to_job(
             resume_text,
             job_description
