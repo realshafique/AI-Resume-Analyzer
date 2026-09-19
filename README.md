@@ -43,7 +43,7 @@ The AI evaluates the candidate's experience and education against the job requir
 
 ## 🧠 How It Works
 
-```text
+text
 Resume PDF
     │
     ▼
