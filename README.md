@@ -43,26 +43,22 @@ The AI evaluates the candidate's experience and education against the job requir
 
 ## 🧠 How It Works
 
-text
+```text
 Resume PDF
-    │
-    ▼
+    ↓
 Text Extraction
-    │
-    ▼
+    ↓
 Job Description
-    │
-    ▼
+    ↓
 Gemini AI
-    │
-    ▼
+    ↓
 Resume Analysis
-    │
     ├── Strengths
     ├── Missing Skills
     ├── Recommendations
     ├── Experience Match
     └── Education Match
+```
 
 # 🚀 Installation & Setup
 
