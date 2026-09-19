@@ -63,3 +63,95 @@ Resume Analysis
     ├── Recommendations
     ├── Experience Match
     └── Education Match
+
+
+🚀 Installation & Setup
+
+Follow these steps to run the AI Resume Analyzer locally.
+
+Prerequisites
+
+Make sure you have the following installed:
+
+- Python 3.10+
+- Git
+- pip
+
+1. Clone the Repository
+
+git clone https://github.com/realshafique/AI-Resume-Analyzer.git
+cd AI-Resume-Analyzer
+
+2. Create a Virtual Environment
+
+python -m venv venv
+
+Activate the virtual environment:
+
+Windows:
+
+venv\Scripts\activate
+
+macOS/Linux:
+
+source venv/bin/activate
+
+3. Install Dependencies
+
+pip install -r requirements.txt
+
+4. Configure Environment Variables
+
+Create a ".env" file in the project root:
+
+API_KEY=your_api_key_here
+
+Replace "your_api_key_here" with your actual API key.
+
+«⚠️ Never commit your ".env" file or API keys to GitHub.»
+
+5. Start the Backend
+
+If the project uses FastAPI:
+
+uvicorn main:app --reload
+
+The API will be available at:
+
+http://127.0.0.1:8000
+
+FastAPI documentation:
+
+http://127.0.0.1:8000/docs
+
+6. Start the Frontend
+
+Open another terminal, activate the virtual environment, and run:
+
+streamlit run app.py
+
+The Streamlit application will open in your browser.
+
+📁 Project Structure
+
+AI-Resume-Analyzer/
+│
+├── backend/
+├── frontend/
+├── models/
+├── requirements.txt
+├── .env
+├── .gitignore
+└── README.md
+
+«The exact folder structure may vary depending on the current project version.»
+
+🛠️ Tech Stack
+
+- Python
+- FastAPI
+- Streamlit
+- NLP
+- Machine Learning
+- Generative AI
+- REST API
