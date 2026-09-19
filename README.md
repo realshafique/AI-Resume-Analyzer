@@ -63,6 +63,7 @@ Resume Analysis
     ├── Recommendations
     ├── Experience Match
     └── Education Match
+
 # 🚀 Installation & Setup
 
 Follow these steps to run the AI Resume Analyzer locally.
@@ -110,7 +111,7 @@ pip install -r requirements.txt
 
 ## 5. Configure Environment Variables
 
-Create a `.env` file in the project root directory and add your API key:
+Create a `.env` file in the project root directory.
 
 ```env
 GEMINI_API_KEY=your_api_key_here
@@ -122,8 +123,6 @@ Replace `your_api_key_here` with your actual Gemini API key.
 
 ## 6. Run the Application
 
-If the project uses Streamlit, run:
-
 ```bash
 streamlit run app.py
 ```
@@ -134,17 +133,3 @@ The application will open in your browser.
 
 - Python
 - Streamlit
-- FastAPI
-- NLP
-- Generative AI
-- Gemini AI
-
-## 📌 Features
-
-- Resume analysis
-- Job description matching
-- Strength identification
-- Missing skills detection
-- Personalized recommendations
-- Experience matching
-- Education matching
