@@ -63,13 +63,11 @@ Resume Analysis
     ├── Recommendations
     ├── Experience Match
     └── Education Match
-
-
-🚀 Installation & Setup
+# 🚀 Installation & Setup
 
 Follow these steps to run the AI Resume Analyzer locally.
 
-Prerequisites
+## Prerequisites
 
 Make sure you have the following installed:
 
@@ -77,81 +75,76 @@ Make sure you have the following installed:
 - Git
 - pip
 
-1. Clone the Repository
+## 1. Clone the Repository
 
+```bash
 git clone https://github.com/realshafique/AI-Resume-Analyzer.git
 cd AI-Resume-Analyzer
+```
 
-2. Create a Virtual Environment
+## 2. Create a Virtual Environment
 
+```bash
 python -m venv venv
+```
 
-Activate the virtual environment:
+## 3. Activate the Virtual Environment
 
-Windows:
+### Windows
 
+```bash
 venv\Scripts\activate
+```
 
-macOS/Linux:
+### macOS/Linux
 
+```bash
 source venv/bin/activate
+```
 
-3. Install Dependencies
+## 4. Install Dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
-4. Configure Environment Variables
+## 5. Configure Environment Variables
 
-Create a ".env" file in the project root:
+Create a `.env` file in the project root directory and add your API key:
 
-API_KEY=your_api_key_here
+```env
+GEMINI_API_KEY=your_api_key_here
+```
 
-Replace "your_api_key_here" with your actual API key.
+Replace `your_api_key_here` with your actual Gemini API key.
 
-«⚠️ Never commit your ".env" file or API keys to GitHub.»
+> ⚠️ Never upload your `.env` file or API keys to GitHub.
 
-5. Start the Backend
+## 6. Run the Application
 
-If the project uses FastAPI:
+If the project uses Streamlit, run:
 
-uvicorn main:app --reload
-
-The API will be available at:
-
-http://127.0.0.1:8000
-
-FastAPI documentation:
-
-http://127.0.0.1:8000/docs
-
-6. Start the Frontend
-
-Open another terminal, activate the virtual environment, and run:
-
+```bash
 streamlit run app.py
+```
 
-The Streamlit application will open in your browser.
+The application will open in your browser.
 
-📁 Project Structure
-
-AI-Resume-Analyzer/
-│
-├── backend/
-├── frontend/
-├── models/
-├── requirements.txt
-├── .env
-├── .gitignore
-└── README.md
-
-«The exact folder structure may vary depending on the current project version.»
-
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 - Python
-- FastAPI
 - Streamlit
+- FastAPI
 - NLP
-- Machine Learning
 - Generative AI
-- REST API
+- Gemini AI
+
+## 📌 Features
+
+- Resume analysis
+- Job description matching
+- Strength identification
+- Missing skills detection
+- Personalized recommendations
+- Experience matching
+- Education matching
